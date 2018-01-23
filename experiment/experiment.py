@@ -227,6 +227,9 @@ for trialnr, vidname in enumerate(VIDEOS):
     disp.fill()
     disp.show()
     
+    # Release the video capture.
+    cap.release()
+    
     # Stop recording eye movements.
     tracker.stop_recording()
 
